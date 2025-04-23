@@ -3,43 +3,64 @@
 *.log
 *.pyc
 *.swp
+*.dill
+*.apk
+*.ipa
+*.cache
 .DS_Store
 .atom/
 .build/
-.buildlog/
 .history
 .svn/
 .swiftpm/
 migrate_working_dir/
+.env
+.env.local
+.github/workflows/
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
+# IDE Config
 .idea/
+*.iml
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
+# VS Code - tuỳ chọn
 #.vscode/
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Flutter/Dart/Pub
 .dart_tool/
 .flutter-plugins
 .flutter-plugins-dependencies
+.packages
 .pub-cache/
 .pub/
-/build/
+build/
 
-# Symbolication related
+# Firebase
+android/app/google-services.json
+ios/firebase_app_id_file.json
+lib/firebase_options.dart
+
+# iOS/macOS Xcode
+ios/Podfile
+ios/Podfile.lock
+ios/build/
+ios/*.xcconfig
+macos/Podfile
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Flutter/ephemeral/
+macos/Flutter/*.xcconfig
+
+# Windows/Linux build
+linux/flutter/generated_plugin_registrant.cc
+linux/flutter/generated_plugins.cmake
+windows/flutter/generated_plugin_registrant.cc
+windows/flutter/generated_plugins.cmake
+
+# Obfuscation/Symbolication
+app.*.map.json
 app.*.symbols
 
-# Obfuscation related
-app.*.map.json
+# Localization
+assets/languages/*.json
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# Lock files
+pubspec.lock
